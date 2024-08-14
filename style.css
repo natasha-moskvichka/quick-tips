@@ -1,3 +1,23 @@
+:root {
+    --primary: black;
+    --primary-light: #fbfbfb;
+    --grey: #f5f5f5;
+    --light-green: #519fa1;
+    --secondary: #fbfbfb;
+    --dark-green: #0D1E21;
+    --dark-green-opacity: rgba(81, 159, 161, .5);
+}
+
+:root[data-theme="dark"] {
+    --primary: white;
+    --primary-light: #fbfbfb;
+    --grey: #f5f5f5;
+    --light-green: #519fa1;
+    --secondary: #143D41;
+    --dark-green: #0D1E21;
+    --dark-green-opacity: rgba(13, 30, 33, .5);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +26,7 @@
 
 html {
     font-size: 10px;
-    color: white;
+    color: var(--primary);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -18,11 +38,11 @@ img {
 .main {
     max-width: 50rem;
     margin: 2rem auto;
-    background: linear-gradient(#519fa1, #143D41);
+    background: linear-gradient(var(--light-green), var(--secondary));
     border-radius: 4rem;
-    box-shadow: 0 2px 2px #143D41;
+    box-shadow: 0 2px 2px var(--dark-green-opacity);
     padding: 3rem 1.6rem 6rem 1.6rem;
-    color: white;
+    color: var(--primary);
 }
 
 .title {
@@ -36,8 +56,8 @@ img {
     margin-bottom: 1.6rem;
     padding: 0 1.6rem;
     border-radius: 1rem;
-    background: rgba(13, 30, 33, .5);
-    box-shadow: 0 2px 2px #143D41
+    background: var(--dark-green-opacity);
+    box-shadow: 0 2px 2px var(--dark-green-opacity);
 }
 
 .wrap > div {
@@ -58,12 +78,12 @@ img {
 }
 
 input[type="number"] {
-    background: #eee;
+    background: var(--primary-light);
     font-size: 1.6rem;
-    border: 1px solid #0D1E21;
+    border: 1px solid var(--dark-green);
     border-radius: .5rem;
     padding: .8rem 0 .8rem .8rem;
-    box-shadow: inset 0 2px 2px lightgray;
+    box-shadow: inset 0 2px 2px var(--grey);
 }
 
 input::placeholder {
@@ -84,7 +104,7 @@ input::placeholder {
     -webkit-appearance: none;
     width: 100%;
     height: 8px;
-    background: #eee;
+    background: var(--primary-light);
     margin-top: 1.2rem;
     border-radius: .3rem;
 }
@@ -94,7 +114,7 @@ input::placeholder {
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 50%;
-    background: #0D1E21;
+    background: var(--light-green);
     cursor: pointer;
 }
 
@@ -102,10 +122,26 @@ input::placeholder {
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 50%;
-    background: #143D41;
+    background: var(--light-green);
     cursor: pointer;
 }
 
 .range::-moz-focus-outer {
     border: 0;
+}
+
+.theme-button {
+    width: 6rem;
+    height: 2.4rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: .3rem;
+    opacity: .3;
+    background: transparent;
+}
+
+.theme-button-active {
+    background: transparent;
+    color: var(--primary);
+    opacity: 1;
 }
