@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    max-width: 50rem;
+    margin: 2rem auto;
+    background: linear-gradient(#519fa1, #143D41);
+    border-radius: 4rem;
+    box-shadow: 0 2px 2px #143D41;
+    padding: 3rem 1.6rem 6rem 1.6rem;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.wrap {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 1rem;
+    background: rgba(13, 30, 33, .5);
+    box-shadow: 0 2px 2px #143D41
+}
+
+.wrap > div {
+    padding: 1.6rem 0;
+}
+
+.bill {
+    display: flex;
+}
+
+.bill label {
+    flex: 1;
+    align-self: center;
+}
+
+.bill input {
+    flex: 3;
+}
+
+input[type="number"] {
+    background: #eee;
+    font-size: 1.6rem;
+    border: 1px solid #0D1E21;
+    border-radius: .5rem;
+    padding: .8rem 0 .8rem .8rem;
+    box-shadow: inset 0 2px 2px lightgray;
+}
+
+input::placeholder {
+    font-family: "Roboto", sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    margin-top: 1.2rem;
+    border-radius: .3rem;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #0D1E21;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #143D41;
+    cursor: pointer;
+}
+
+.range::-moz-focus-outer {
+    border: 0;
+}
