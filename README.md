@@ -1,5 +1,5 @@
 Расчёт чаевых
 
-===
+---
 
-https://natasha-moskvichka.github.io/quick-tips/
+natasha-moskvichka.github.io/quick-tips/
