@@ -14,6 +14,21 @@
     <h1 class="title">Расчет чаевых</h1>
     <section class="wrap">
         <div class="bill">
+            <label for="currency">Валюта</label>
+           <!-- <input type="number" id="currency" />-->
+            <select class="select-field" id="currency">
+                <option>USD</option>
+                <option>EUR</option>
+                <option>GEL</option>
+                <option>RUB</option>
+            </select>
+            <div class="bill">
+                <div class="my-currency"></div>
+            </div>
+        </div>
+    </section>
+    <section class="wrap">
+        <div class="bill">
             <label for="yourBill">Счёт</label>
             <input type="number" placeholder="Ваш счёт" id="yourBill" />
         </div>

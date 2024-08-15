@@ -73,11 +73,13 @@ img {
     align-self: center;
 }
 
-.bill input {
+.bill input,
+.select-field {
     flex: 3;
 }
 
-input[type="number"] {
+input[type="number"],
+.select-field {
     background: var(--primary-light);
     font-size: 1.6rem;
     border: 1px solid var(--dark-green);

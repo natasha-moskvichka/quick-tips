@@ -1,7 +1,20 @@
+
+
 const formatMoney = (value) => {
+    const currency = document.querySelector('#currency').value;
     value = Math.ceil(value * 100) / 100;
     value = value.toFixed(2);
-    return "₽ " + value;
+    if (currency === 'USD') {
+        return "$ " + value;
+    } else if (currency === 'EUR') {
+        return "€ " + value;
+    } else if (currency === 'RUB') {
+        return "₽ " + value;
+    } else {
+        return "₾ " + value;
+    }
+
+   // return "₽ " + value;
 }
 
 const formatSplit = (value) => {
