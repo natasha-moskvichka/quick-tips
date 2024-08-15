@@ -2,4 +2,4 @@
 
 ---
 
-natasha-moskvichka.github.io/quick-tips/
+ https://natasha-moskvichka.github.io/quick-tips/
